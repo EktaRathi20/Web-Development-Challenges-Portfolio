@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenge5.2</title>
+    <style>
+        html,body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .flex-container{
+           width: 717px;
+            height: 566px;
+           background-color:white;
+            border-radius: 5px;
+            padding: 40px 65px 55px 65px; 
+            margin: 152px;
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+           flex-direction: row;
+           justify-content:space-around;
+           align-items: center;
+           border: 2px solid black;
+        }
+        .s-flex-container1{
+            width: 190px;
+            height: 289px;
+            background-color:whitesmoke;
+            border-radius: 5px;
+           margin: 0px;
+            margin-top: 10px;
+            box-shadow: 3px 5px rgb(226, 223, 223);
+            border-radius: 5px;
+        }
+        .s-flex-container1 img{
+            width: 70px;
+           margin-left: 60px;
+        }
+        .s-flex-container1 p{
+            text-align: center;
+            background-color:whitesmoke;
+            color: rgb(0, 0, 0);
+            margin: 0px;
+        }
+        .s-flex-container1 input{
+            width: 100px;
+            padding: 1px;
+            margin-left: 44px;
+            border-radius: 5px;
+            border: none;
+            background-color: wheat;
+            cursor: pointer;
+        }
+        .s-flex-container2{
+            width: 190px;
+            height: 289px;
+            background-color:whitesmoke;
+            box-shadow: 3px 5px rgb(226, 223, 223);
+            border-radius: 5px;
+            margin: 0px;
+        }
+        .s-flex-container2 img{
+            width: 70px;
+           margin-left: 60px;
+           margin-top: 5px;
+        }
+        .s-flex-container2 p{
+            text-align: center;
+            background-color:whitesmoke;
+            color: rgb(0, 0, 0);
+            margin: 0px;
+        }
+        .s-flex-container2 input{
+            width: 100px;
+            padding: 1px;
+            margin-left: 44px;
+            border-radius: 5px;
+            border: none;
+            background-color: wheat;
+            cursor: pointer;
+        }
+        .s-flex-container3{
+            width: 190px;
+            height: 289px;
+            background-color:whitesmoke;
+            box-shadow: 3px 5px rgb(226, 223, 223);
+            border-radius: 5px;
+            border-radius: 5px;
+            margin: 0px;
+            margin-top: 10px;
+        }
+        .s-flex-container3 img{
+            width: 77px;
+            height: 68px;
+            margin-left: 60px;
+            margin-top: 10px;
+}
+       
+        .s-flex-container3 p{
+            text-align: center;
+            background-color:whitesmoke;
+            color: rgb(0, 0, 0);
+            margin: 0px;
+        }
+        .s-flex-container3 input{
+            width: 100px;
+            padding: 1px;
+            margin-left: 44px;
+            border-radius: 5px;
+            border: none;
+            background-color: wheat;
+            cursor: pointer;
+        }
+        .s-flex-container4{
+            width: 190px;
+            height: 289px;
+            background-color:whitesmoke;
+            border-radius: 5px;
+            margin: 0px;
+            margin-top: 10px;
+            box-shadow: 3px 5px rgb(226, 223, 223);
+            border-radius: 5px;
+        }
+        .s-flex-container4 img{
+            width: 70px;
+           margin-left: 60px;
+        }
+        .s-flex-container4 p{
+            text-align: center;
+            background-color:whitesmoke;
+            color: rgb(0, 0, 0);
+            margin: 0px;
+        }
+        .s-flex-container4 input{
+            width: 100px;
+            padding: 1px;
+            margin-left: 44px;
+            border-radius: 5px;
+            border: none;
+            background-color: wheat;
+            cursor: pointer;
+        }
+        .s-flex-container5{
+            width: 190px;
+            height: 289px;
+            background-color:whitesmoke;
+            box-shadow: 3px 5px rgb(226, 223, 223);
+            border-radius: 5px;
+            margin: 0px;
+        }
+        .s-flex-container5 img{
+            width: 70px;
+           margin-left: 60px;
+           margin-top: 5px;
+        }
+        .s-flex-container5 p{
+            text-align: center;
+            background-color:whitesmoke;
+            color: rgb(0, 0, 0);
+            margin: 0px;
+        }
+        .s-flex-container5 input{
+            width: 100px;
+            padding: 1px;
+            margin-left: 44px;
+            border-radius: 5px;
+            border: none;
+            background-color: wheat;
+            cursor: pointer;
+        }
+        .s-flex-container6{
+            width: 190px;
+            height: 289;
+            background-color:whitesmoke;
+            box-shadow: 3px 5px rgb(226, 223, 223);
+            border-radius: 5px;
+            border-radius: 5px;
+            margin: 0px;
+            margin-top: 10px;
+
+        }
+        .s-flex-container6 img{
+            width: 77px;
+            height: 68px;
+            margin-left: 60px;
+            margin-top: 10px;
+}
+       
+        .s-flex-container6 p{
+            text-align: center;
+            background-color:whitesmoke;
+            color: rgb(0, 0, 0);
+            margin: 0px;
+        }
+        .s-flex-container6 input{
+            width: 100px;
+            padding: 1px;
+            margin-left: 44px;
+            border-radius: 5px;
+            border: none;
+            background-color: wheat;
+            cursor: pointer;
+        }
+        input:hover{
+            background-color: goldenrod;
+            
+        }
+        h1{
+        text-align: center;
+        background-color: teal;
+        color: wheat;
+        padding: 15px;
+        margin-top: 0px ;
+        margin-bottom: 0px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Challenge5.2</h1>
+    <div class="flex-container">
+        <div class="s-flex-container1">
+            <img src="c++.jpg">
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam ea minima, iste ad sit repellat pariatur, eos commodi placeat assumenda tempore natus? Quaerat magni consequuntur omnis velit in mollitia!</p>
+            <input type="button"value="Read More">
+        </div>
+        <div class="s-flex-container2">
+            <img src="c.jpg">
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam ea minima, iste ad sit repellat pariatur, eos commodi placeat assumenda tempore natus? Quaerat magni consequuntur omnis velit in mollitia!</p>
+            <input type="button"value="Read More">
+        </div>
+        <div class="s-flex-container3">
+            <img src="java.jpg">
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam ea minima, iste ad sit repellat pariatur, eos commodi placeat assumenda tempore natus? Quaerat magni consequuntur omnis velit in mollitia!</p>
+            <input type="button"value="Read More">
+        </div>
+        <div class="s-flex-container4">
+            <img src="c++.jpg">
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam ea minima, iste ad sit repellat pariatur, eos commodi placeat assumenda tempore natus? Quaerat magni consequuntur omnis velit in mollitia!</p>
+            <input type="button"value="Read More">
+        </div>
+        <div class="s-flex-container5">
+            <img src="c.jpg">
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam ea minima, iste ad sit repellat pariatur, eos commodi placeat assumenda tempore natus? Quaerat magni consequuntur omnis velit in mollitia!</p>
+            <input type="button"value="Read More">
+        </div>
+        <div class="s-flex-container6">
+            <img src="java.jpg">
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aperiam ea minima, iste ad sit repellat pariatur, eos commodi placeat assumenda tempore natus? Quaerat magni consequuntur omnis velit in mollitia!</p>
+            <input type="button"value="Read More">
+        </div>
+    </div>
+</body>
+</html>

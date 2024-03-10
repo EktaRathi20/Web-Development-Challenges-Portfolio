@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge5.3</title>
+    <style>
+        html,body{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: rgb(231, 231, 231);
+        }
+        .container{
+            width: 615px;
+            height: 610px;
+            border: 2px solid black;
+           background-color: rgb(223, 223, 223);
+           border-radius: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+           margin-left: 260px;
+           margin-top: 10px;
+           justify-content:space-around;
+        }
+        .s-container1{
+            width:189px;
+            height:600px;
+            /*border: 2px solid green;*/
+            background-color: rgb(3, 3, 3);
+            margin-left: 2px;
+            border-radius: 5px;
+        }
+        .s-container2{
+            width: 410px;
+            height: 45px;
+           /* border: 2px solid brown;*/
+            background-color: black;
+            margin-left: 2px;
+            border-radius: 5px;
+        }
+        .s-container3{
+            width: 410px;
+            height: 503px;
+           /* border: 2px solid blue;*/
+            background-color: black;
+            margin-left: 2px;
+            border-radius: 5px;
+        }
+        .s-conatiner4{
+            width: 410px;
+            height:35px;
+           /* border: 2px solid goldenrod;*/
+            background-color: black;
+            margin-left: 2px;
+            border-radius: 5px;
+        }
+        #challenge{
+            background-color: black;
+            color: whitesmoke;
+            text-align: center;
+            padding: 10px;
+            margin: 0px;
+        }
+        .s-container1 ul{
+            list-style-type: none;
+            margin-top: 2px;
+            font-size: 32px;
+            color: rgb(255, 255, 255);
+           margin-left: 0px;
+           padding-left: 5px;
+        }
+        .s-container1 ul li select,.s-container1 ul li input[type=button] {
+            width: 178px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        #home{
+            text-decoration: none;
+            color: white;
+        }
+        .s-container1 ul li input[type=button]:hover, section a:hover , footer a:hover{
+            background-color: rgb(150, 150, 150);
+           
+        }
+       section h1{
+            text-align: center;
+            margin: 0px;
+            color: white;
+        }
+        section p a{
+            font-size: 11px;
+            text-align: center;
+            color: white;
+        }
+        section p{
+            color: white;
+        }
+        .s-container2 h1{
+            text-align: center;
+            margin-top: 5px;
+            color: white;
+           
+        }
+        footer a , footer p{
+            text-decoration: none;
+            color: white;
+            font-size: 13px;
+            
+        }
+        footer{
+            margin-left: 5px;
+            padding-top: 0px;
+        }
+        .s-container3 img{
+            width: 200px;
+            height: 150px;
+            margin-left: 100px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .s-container3 p{
+            text-align: center;
+            color: white;
+        }
+        .s-container1 ul li a{
+            font-size: 20px;
+            color:black;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .a{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 id="challenge">Challenge5.3</h1>
+    <div class="container">
+        <div class="s-container1">
+            <ul>
+                <li><a href="Challenge5.3.html" id="home"><center>Home</center></a></li>
+                <li class="a">
+                    <a href="/Challenge1/yourcompany.html " >Challenge1&nbsp;&nbsp;&nbsp;</a>
+                    <a href="/Challenge2/gym.html">Challenge2&nbsp;&nbsp;&nbsp;</a>
+                    <a href="/Challenge3/challenge3.html">Challenge3&nbsp;&nbsp;&nbsp;</a>
+                    <a href="/Challenge4/Challenge4.html">Challenge4&nbsp;&nbsp;&nbsp;</a>
+                    <a href="Challenge5.1.html">Challenge5.1</a>
+                    <a href="Challenge5.2.html">Challenge5.2</a>
+                </select></li>
+                <li><input type="button" value="SignIn"></li>
+                <li><input type="button" value="SignUp"></li>
+            </ul>
+            <section>
+                <h1 style=" text-decoration-line: underline;  padding-top: 5px;margin: 0px;"><b>Our Founder</b></h1>
+                <br>
+                <img src="testUser.jpg" alt="this is test user" width="100" height="100" style="margin-left: 44px;">
+                <h1 style="text-decoration-line: underline;">test user</h1>
+                <p><a href="#" target="_blank" rel="noopener noreferrer"  id="youtube">YouTube</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#" target="_blank" rel="noopener noreferrer"  id="linkedin">LinkedIn</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="#" target="_blank" rel="noopener noreferrer" id="instagram">Instagram</a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </section>
+        </div>
+        <div class="s-container2"><h1>YourCompany<h1></div>
+        <div class="s-container3">
+            <img src="java.jpg">
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quod facere est, beatae quos deleniti optio maxime cum accusantium incidunt ratione animi qui odio! Voluptatem culpa consequuntur delectus alias assumenda fugiat voluptates ipsa suscipit accusamus aspernatur doloribus repudiandae nesciunt voluptate, neque vel repellendus eveniet earum molestias vero. Ipsum quod aspernatur nulla facere eaque atque, accusantium, voluptas iusto voluptates aliquam consectetur ab iste. Iusto obcaecati dolores necessitatibus suscipit at saepe earum voluptates, itaque odit laboriosam. Ipsam nihil perspiciatis tempora minima nesciunt sit illo alias deserunt unde? Suscipit optio esse fugit id ad consectetur quas delectus? Esse ad aut eius aspernatur libero?</p>   
+        </div>
+        <div class="s-conatiner4">
+        <footer>
+            <p><a href="#">FAQ </a>&nbsp;||
+            <a href="#">Contact Us</a>&nbsp;||
+            <a href="#">Terms of Use</a>&nbsp;||
+            <a href="#">Privacy Policy</a>&nbsp;||
+            <a href="#">&copy;2020|YourCompany</a>
+            </p>
+        </footer>   
+    </div>
+    </div>
+</body>
+</html>

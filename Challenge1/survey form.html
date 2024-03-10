@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        htnl,body{
+            margin: 0px;
+            padding: 0px;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        form{
+            background-color: rgb(41, 41, 40);
+            color: whitesmoke;
+            border-radius: 5px;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(192, 223, 162);
+        }
+        section{
+            background-color: rgb(41, 41, 40);
+            text-align: center;
+            border-radius: 5px;
+        }
+        .container{
+            padding: 10px 260px 160px;
+            background-color: gray;
+           
+        }
+        .container input[type=text],input[type=email],textarea,input[type=submit],select,#submit{
+        padding: 5px;
+         width: 98%;
+         border-radius: 5px;
+         border: none;
+         border-radius: 5px;
+        }
+        #submit:hover,#login:hover,#signup:hover,#paynow:hover,#home:hover{
+            color: rgb(255, 255, 255);
+            background-color: rgb(106, 194, 18);
+            cursor: pointer;
+        }
+        #yc{
+            margin: 0px;
+            text-align: center;
+            padding: 40px;
+            color: rgb(109, 167, 109);
+            background-color: black;
+        }
+        nav{
+            background-color: rgb(0, 0, 0);
+            text-align: right;
+        }
+        nav a{
+            background-color: rgb(168, 166, 163);
+            color: whitesmoke;
+            font-size: 15px;
+            margin: 1px;
+            padding: 10px;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 2px;
+            border: none; 
+        }
+        header{
+            background-color: rgb(58, 57, 57);
+        }
+        header a{
+           color: whitesmoke;
+           font-size: 25px;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+             border-radius: 5px;
+             padding: 2px;
+             border: none;      
+        }
+        nav li , header li {
+            list-style: none;
+            display: inline;
+            color: whitesmoke;       
+        }
+
+        nav ul,header ul {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="yclogin.html" id="login">LogIn</a></li>
+            <li> <a href="ycsignup.html"id="signup">SignUp</a></li>
+        </ul>
+        </nav>
+        <h1 id="yc">YourCompany</h1>
+        <header>
+            <ul>
+                <li><a href="yourcompany.html" id="home">Home</a> &nbsp;&nbsp;|</li>
+                <li><a href="Payment_Form.html" id="paynow">PayNow </a></li>
+            </ul>
+        </header>
+        <div class="container">
+            <form action="">
+        <section>
+            <h2 style="background-color: black; color: whitesmoke; border-radius: 5px;">Survey Form</h2>
+        <p>Name:&nbsp<input type="text" name="name"id="name" required></p>
+        <p>Email:&nbsp;<input type="email" name="email" id="email"></p>
+        <p>Age:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="age" id="age"></p>
+      
+        <p>Which option best describes you?
+        <select name="option" id="option" required>
+            <option value="">--Select--</option>
+            <option value="visa">Student</option>
+            <option value="rupay">Teacher</option>
+            <option value="mastercard">Salesman</option>
+        </select></p>
+        <fieldset>
+            <legend>Would you recommend YourCompany to a friend?</legend>
+         <p >
+            <input type="radio" name="option" id="yes" required >Yes
+            <input type="radio" name="option" id="no"required>No
+            <input type="radio" name="option" id="maybe" required>Maybe
+         </p>
+        </fieldset>
+        <br>
+        <fieldset> 
+            <legend>Language and Framework knows(check all the apply)</legend>   
+            <p style="text-align: left;" >
+             <input type="checkbox" name="checkbox" id="checkbox">C<br>
+             <input type="checkbox" name="checkbox" id="check">C++<br>
+             <input type="checkbox" name="checkbox" id="checkbox">C#<br>
+             <input type="checkbox" name="checkbox" id="checkbox">JAVA<br>
+             <input type="checkbox" name="checkbox" id="checkbox">VB.NET<br>
+             <input type="checkbox" name="checkbox" id="checkbox">PYTHON<br>
+             </p>
+         </fieldset>
+         <p style="text-align: left;">Any Comment or Suggestions:&nbsp;<center><textarea name="textarea" id="textarea" cols="55" rows="6"></textarea></center></p>
+         <div style="text-align: center; padding-bottom: 30px;"><input type="submit" value="Submit" id="submit" style="border:none ; font-size: 20px; border-radius: 2px; width: 98%; "></div> 
+        </section>
+        </form>
+        </div>
+</body>
+</html>

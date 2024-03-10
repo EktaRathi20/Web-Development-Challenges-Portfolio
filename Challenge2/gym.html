@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitness</title>
+    <style>
+        body {
+            color: rgb(0, 0, 0);
+            margin: 0px;
+            padding: 0px;
+            background: url('gym.jpg');
+        }
+
+        .left {
+           /* border: 1px solid rgb(0, 0, 0);*/
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 11px;
+           
+        }
+        .left img{
+            filter: invert(100%);
+            width: 64px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        .left p{
+            text-align: center;
+            font-size: 16px;
+            margin: 4px;
+        }
+        .center {
+            display: block;
+            width: 42%;
+            margin: 12px auto;
+           /* border: 2px solid rgb(47, 56, 27);*/
+            color: black;
+        }
+
+        .right {
+           /* border: 2px solid rgb(22, 63, 59);*/
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 11px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: black;
+            padding: 20px 15px;
+        }
+
+        .navbar li {
+            color: black;
+            display: inline;
+            margin: auto;
+            padding: auto;
+            list-style: none;
+            text-decoration: none;
+
+        }
+
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color: rgb(196, 219, 170);
+        }
+        .btn{
+            margin: 0px 6px;
+            color:white;
+            background-color: black;
+            padding: 3px 5px;
+            border-radius: 5px;
+            border: 2px solid grey;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            color: rgb(196, 219, 170);
+        }
+        input[type='button']:hover{
+            background-color: rgb(196, 219, 170);
+            color: rgb(48, 48, 48);
+        }
+        .container{
+            margin-top: 73px;
+            margin-left: 112px;
+            padding: 3px 13px 71px;
+            border: 2px solid black;
+            width: 317px;
+            height: 330px;
+            text-align: center;
+        }
+       form{
+           margin: 20px;
+           text-align: center;
+       }
+       .form-group input{
+            font-size: 15px;
+            margin: 10px;
+            padding: 10px;
+            display: block;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            width: 90%;
+       }
+       .container input[type='button']{
+           border: none;
+           border-radius: 5px;
+           width: 90%;
+           padding: 5px;
+           margin: 4px;
+       }
+      
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+           <img src="gymlogo.jpg">
+           <p>Power Gym</p>
+        </div>
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" >Contact-Us</a></li>
+                <li><a href="#" >About-Us</a></li>
+                <li><a href="#">Fitness-Calculater</a></li>
+            </ul>
+        </div>
+        <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">E-Mail Us</button>
+    </div>
+    </header>
+    <div class="container">
+        <h3>Join The Best Gym Of Jodhpur Now!!</h3>
+    <form action="">
+        <div class="form-group">
+        <input type="text" placeholder="Enter Your Name"><br>
+        <input type="text" placeholder="Enter Mobile Number"><br>
+        <input type="text" placeholder="Address"><br>
+        <input type="email" placeholder="Enter Your Email-ID"><br>
+        </div>
+        <input type="button" value="submit">
+    </form>
+    </div>
+</body>
+
+</html>

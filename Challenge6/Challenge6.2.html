@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge6.2</title>
+    <style>
+        .container{
+
+            display: grid;
+            grid-template-columns: 250px 200px 200px 200px ;
+            grid-template-rows:100px 100px 100px 100px 100px;
+            column-gap:10px;
+            row-gap: 10px;
+            
+        }
+        .item{
+            border: 2px solid black;    
+            border-radius: 5px;
+        }
+        #nav{
+            grid-row-start: 1;
+            grid-row-end: 7 ;
+            color: white;
+            background-color: black;
+        }
+        #header{
+            grid-column-start: 2;
+            grid-column-end: 6;
+            text-align: center;
+            color: white;
+            background-color: black;
+            padding-top: 40px;
+            font-size: 30px;
+        }
+        #artical{
+            grid-column-start: 2;
+            grid-column-end:5;
+            grid-row-start: 2;
+            grid-row-end: 5;
+            background-color: black ;
+            color: white;
+        }
+        #ads{
+            grid-row-start: 2;
+            grid-row-end: 5;
+           
+        }
+        #footer{
+            grid-column-start: 2;
+            grid-column-end: 6;
+            grid-row-start: 5;
+            grid-row-end: 7;
+            background-color: black;
+          padding-top: 60px;
+        }
+        .item h1{
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+            text-align: center;
+            padding: 0px;
+        }
+        .item li a, section a{
+            text-decoration: none;
+            color:white;
+          
+        }
+        .item li a:hover , section a:hover ,#footer a:hover{
+            background-color: black;
+            color: rgb(171, 223, 124);
+        }
+        section p{
+            text-align: center;
+        }
+        .item h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        #footer a{
+            color: white;
+            padding: 35px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="nav">
+            <div class="item1">
+                <h1>Projects</h1>
+                <ul>
+                    <li><a href="challenge1/yourcompany.html">project1</a></li>
+                    <li><a href="challenge2/gym.html">project2</a></li>
+                    <li><a href="challenge3/challenge3.html">project3</a></li>
+                    <li><a href="challenge4/Challenge4.html">project4</a></li>
+                    <li><a href="challenge5/Challenge5.1.html">project5</a></li>
+                    <li><a href="challenge5/Challenge5.2.html">project6</a></li>
+                    <li><a href="challenge5/Challenge5.3.html">project7</a></li>
+                    <li><a href="Challenge6.1.html">project8</a></li>
+                </ul>
+                <hr>
+                <section>
+                    <h1>Our Founder</h1>
+                    <br>
+                    <img src="testUser.jpg" alt="this is test user" width="100" height="100" style="margin-left: 72px;">
+                    <h1 style="text-decoration-line: underline;">test user</h1>
+                    <p><a href="#" target="_blank" rel="noopener noreferrer"  id="youtube">YouTube</a>|
+                    <a href="#" target="_blank" rel="noopener noreferrer"  id="linkedin">LinkedIn</a>|
+                    <a href="#" target="_blank" rel="noopener noreferrer" id="instagram">Instagram</a></p>
+                </section>
+            </div>
+        </div>
+        <div class="item" id="header">Challenge6.2</div>
+        <div class="item" id="artical"><h1>Java</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ut nostrum! Iusto suscipit obcaecati vero inventore? Numquam quidem deserunt nostrum maxime! Consequuntur tempora tenetur sit porro obcaecati quod, ad adipisci possimus harum. Quaerat dolorem laboriosam necessitatibus eaque modi tempore, suscipit ea numquam corrupti ipsa eligendi, illum facere. Explicabo aliquid vitae consequuntur,</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum ipsum ratione, dolor nihil dignissimos illo est illum autem ad ducimus perferendis atque distinctio ipsam magnam culpa repellendus alias provident, aliquid et. Earum cumque ut perspiciatis incidunt enim nesciunt. Ipsum assumenda perferendis qui atque quod molestiae sint ad repudiandae. Inventore, neque.</p></div>
+        <div class="item" id="ads"><a href="challenge5/Challenge5.3.html"><img src="java.jpg" width="267px" height="315px" ></a></div>
+        <div class="item" id="footer">
+            <a href="#">FAQ</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">&copy;2020|Apni Kaksha</a> </div>
+    </div>
+</body>
+</html>
